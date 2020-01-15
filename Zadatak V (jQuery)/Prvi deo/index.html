@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <style>
+        h2 {
+            color: white;
+        }
+
+        #tab1,
+        #tab2,
+        #tab3 {
+            background-color: white;
+            padding: 10px;
+        }
+
+        #tabovi {
+            background-color: lightslategray;
+            width: 350px;
+            padding: 20px;
+        }
+
+        #tabovi li {
+            display: inline-block;
+            background-color: cadetblue;
+            text-decoration: none;
+            height: 30px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 20px;
+        }
+
+        #tabovi li a {
+            margin-right: 2%;
+            padding: 10px;
+
+            vertical-align: middle;
+            line-height: 30px;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        #tabovi li a:visited {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+
+
+    <title>Prvi deo</title>
+
+    <script>
+        $(function () {
+            $('#tabovi').tabs();
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="tabovi">
+        <h2>Stavke</h2>
+        <ul>
+            <li><a href="#tab1">Prva</a></li>
+            <li><a href="#tab2">Druga</a></li>
+            <li><a href="#tab3">Treća</a></li>
+        </ul>
+        <div id="tab1">
+            <p>Navigacija</p>
+        </div>
+        <div id="tab2">
+            <p>preko</p>
+        </div>
+        <div id="tab3">
+            <p>tabova.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
